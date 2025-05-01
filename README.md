@@ -3,8 +3,8 @@
 ### Carrera de Ingeniería en Software  
 
 **Asignatura:** Manejo y Configuración de Software  
-**Nombre del Estudiante:** ___________________________  
-**Fecha:** ___________________  
+**Nombre del Estudiante:** Josue Sebastian Guevara Tierras  
+**Fecha:** 30/4/2025
 
 ---
 
@@ -23,9 +23,11 @@
 
 **Explicar la diferencia entre los siguientes conceptos/comandos en Git y GitHub:**
 
-- `git clone`  
-- `fork`  
+- `git clone` 
+- `fork`
 - `git pull`
+
+
 
 ### Parte práctica:
 
@@ -37,6 +39,44 @@
   - ¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
 
 **📝 Respuesta:**
+- Desde la Pagina de Github del rpositorio Original dle Ingeniero se seleccionó la opción de fork y se aceptó la creacion del fork en el repositorio remoto del esudiante:
+- Se asignó el repositorio on el comando git remote add Origin [Link del repositorio] y posteriormente se hizo un pull a origin
+
+- Antes de Realizar el pull se  utilizó el comenado git remote -v para verificar la direccion del repositorio 
+
+![alt text](image.png)
+-------------------------------
+![alt text](image-1.png)
+------------------------------------
+* 1. git clone
+ Descarga un repositorio remoto a tu máquina local.
+
+Crea una copia completa del proyecto, incluyendo su historial.
+* 2. fork (en GitHub)
+ Crea una copia personal de un repositorio en tu cuenta de GitHub.
+
+No descarga archivos directamente (necesitas git clone después).
+
+Ideal para contribuir a proyectos open-source sin modificar el original.
+
+ Pasos comunes:
+
+Haces fork desde la interfaz de GitHub.
+
+Luego clonas tu fork con git clone.
+
+Se usa cuando quieres empezar a trabajar en un proyecto existente.
+git clone https://github.com/usuario/repo.git
+* 3. git pull
+ Sincroniza tu repositorio local con los últimos cambios del remoto.
+ Combina git fetch (descarga cambios) + git merge (los aplica).
+Se usa para actualizar tu código antes de seguir trabajando.
+
+
+ ![alt text](image-2.png)
+
+
+
 
 <!-- Escribe aquí tu respuesta a la Pregunta 1 -->
 
@@ -58,6 +98,20 @@
 - Solo el **segundo commit** debe llevar el **tag `"Pregunta 2"`**.
 
 **📝 Respuesta:**
+* El archivo git ignore.gitignore se creo con touch y se modifico con nano para agregar lo siguiente: 
+
+*.log = para ignorar los archivos
+
+/temp = para ignorar la carpeta temp 
+ posteriormente se realizó el commit 
+ ![alt text](image-3.png)
+
+ ![alt text](image-4.png)
+
+Correccion de ignore.gitignore de temp/ a /temp  y demostracion de que no aparece la carpeta temp con ls
+![alt text](image-5.png)
+
+
 
 <!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
 
@@ -90,7 +144,10 @@
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
-
+- Iniciacion de gitflow en el proeco y los comandos para crear la rama `feature`
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
 ---
 
 ## Pregunta 4 (2 puntos)
@@ -123,7 +180,7 @@
 **📝 Respuesta:**
 
 <!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
-
+![alt text](image-9.png)
 ---
 
 ## Pregunta 5 (2 puntos)
